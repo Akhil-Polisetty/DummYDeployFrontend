@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import axios from "axios";
-
+import Cookies from "js-cookie";
 const Register = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -48,6 +48,10 @@ const Register = () => {
 
       // Log backend response for debugging
       console.log("Backend Response:", response.data);
+
+      Cookies.set("user",username);
+      Cookies.set("wallet",wallet);
+      Cookies.set("referralCode",referralCode);
 
       setMessage(`✅ ${response.data.message}`);
       setUsername("");

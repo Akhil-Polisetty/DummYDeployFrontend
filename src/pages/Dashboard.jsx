@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Wallet from "../components/wallet"; // Import the Wallet component
+import Cookies from "js-cookie";
 
 function Dashboard() {
-  const [userId] = useState("user123"); // This can come from auth/login
   const [balance, setBalance] = useState(1000);
   const [tier] = useState("Bronze");
 
@@ -18,7 +18,7 @@ function Dashboard() {
           className="w-24 h-24 rounded-full mx-auto"
         />
         <h2 className="text-2xl text-gray-100">Welcome back!</h2>
-        <p className="text-lg text-gray-400">User ID: {userId}</p>
+        <p className="text-lg text-gray-400">User ID: {Cookies.get('user')}</p>
         <p className="text-lg text-gray-400">Balance: ${balance}</p>
         <p className="text-lg text-gray-400">Tier: {tier}</p>
       </div>
