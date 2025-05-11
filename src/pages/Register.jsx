@@ -44,7 +44,7 @@ const Register = () => {
     console.log("Sending payload:", payload);  // Check the payload being sent
 
     try {
-      const response = await axios.post("http://localhost:5000/api/users/register", payload);
+      const response = await axios.post("https://duumy-deploy1.vercel.app/api/users/register", payload);
 
       // Log backend response for debugging
       console.log("Backend Response:", response.data);
