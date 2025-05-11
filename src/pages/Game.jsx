@@ -15,7 +15,7 @@ function Game() {
   const [result, setResult] = useState("");
   const [spinning, setSpinning] = useState(false);
   const [balance, setBalance] = useState(1000);
-  const [depositAmount, setDepositAmount] = useState(0);
+  const [depositAmount, setDepositAmount] = useState();
   const [tier, setTier] = useState("Bronze");
 
   const updateTier = (newBalance) => {
@@ -97,6 +97,7 @@ function Game() {
 
       {/* Wheel Spin Section */}
       <div className="text-center mb-10">
+      
         <div
           className={`wheel-container ${spinning ? "spin" : ""} mx-auto mb-6`}
           style={{
@@ -119,7 +120,7 @@ function Game() {
             }}
           />
         </div>
-
+<div>The default bet amount is 50</div>
         <button
           onClick={playGame}
           disabled={spinning}

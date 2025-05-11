@@ -23,6 +23,7 @@ export default function SlotMachine({ balance, setBalance }) {
 
   return (
     <div className="text-center">
+    <div>The default bet amount is 50</div>
       <div className="text-4xl my-4">{slots.join(" ")}</div>
       <button
         onClick={spin}

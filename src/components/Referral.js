@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Cookies from 'js-cookie';
 
 const Referral = () => {
-  const [userId] = useState("hardik"); // Replace with dynamic user context
+  // const [userId] = useState("hardik"); // Replace with dynamic user context
   const [copied, setCopied] = useState(false);
   const [tree, setTree] = useState(null);
-  const referralLink = `${window.location.origin}/?ref=${userId}`;
+  const referralLink = `${window.location.origin}/?ref=${Cookies.get('referralCode')}`;
 
   const copyReferralLink = async () => {
     try {

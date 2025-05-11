@@ -21,6 +21,7 @@ function DiceRoll({ balance, setBalance }) {
   return (
     <div className="text-center">
       {/* Reduced the text size here */}
+      <div>The default bet amount is 50</div>
       <div className="text-3xl my-4">🎲 {result}</div>
       <button
         onClick={roll}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function CoinFlip({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [side, setSide] = useState("heads"); // Can be "heads" or "tails"
   const [result, setResult] = useState(null);
 

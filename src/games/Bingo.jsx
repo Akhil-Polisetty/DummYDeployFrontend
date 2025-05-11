@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function Bingo({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [number, setNumber] = useState(null);
   const [result, setResult] = useState(null);
 

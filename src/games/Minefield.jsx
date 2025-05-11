@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 export default function Minefield({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [mines, setMines] = useState(new Set());
   const [clicked, setClicked] = useState([]);
   const [result, setResult] = useState(null);

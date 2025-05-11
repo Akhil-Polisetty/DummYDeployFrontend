@@ -27,9 +27,9 @@ function LuckyDraw({ balance, setBalance }) {
   };
 
   return (
-    <div className="p-6 bg-gray-900 text-white min-h-screen flex items-center justify-center">
+    <div className="p-6 bg-gray-900 text-white  flex items-center justify-center">
       <div className="bg-gray-800 p-8 rounded-lg shadow-md max-w-md w-full">
-        <h2 className="text-3xl font-bold mb-4 text-center">Lucky Draw</h2>
+        {/* <h2 className="text-3xl font-bold mb-4 text-center">Lucky Draw</h2> */}
         <p className="text-center mb-4">Current Balance: <strong>${balance}</strong></p>
 
         <input

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Blackjack({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [player, setPlayer] = useState([]);
   const [dealer, setDealer] = useState([]);
   const [result, setResult] = useState(null);

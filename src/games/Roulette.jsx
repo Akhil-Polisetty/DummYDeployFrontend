@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 function Roulette({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [betType, setBetType] = useState("red"); // Can be "red", "black", or "green"
   const [result, setResult] = useState(null);
 

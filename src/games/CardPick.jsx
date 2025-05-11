@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const cards = ["A♠", "K♦", "Q♣", "J♥", "10♠", "9♦", "8♣", "7♥", "6♠", "5♦", "4♣", "3♥", "2♠"];
 
 export default function CardPick({ balance, setBalance }) {
-  const [betAmount, setBetAmount] = useState(0);
+  const [betAmount, setBetAmount] = useState();
   const [pickedCard, setPickedCard] = useState("");
   const [result, setResult] = useState(null);
 
